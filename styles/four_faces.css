@@ -1,0 +1,176 @@
+.block_name_field {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	color: orange;
+	font-size: 1.1em;
+	font-variant: small-caps;
+	text-align: center;
+}
+
+.block_title_field {
+	margin: 0;
+	padding: 0;
+	font-family: "Times New Roman", Times, serif;
+	font-style: italic;
+	font-size: 0.9em;
+	font-weight: bold;
+	text-align: center;
+}
+
+.polaroid-top,
+.polaroid-bottom {
+	width: 200px;
+	display: inline-block;
+	position: absolute;
+}
+
+.polaroid-top {
+	left: -8%;
+	top: 20%;
+	z-index: 1;
+
+	/*
+	Rotates the image (negative goes counter-clockwise
+	*/
+	-ms-transform: rotate(-6deg);
+	-webkit-transform: rotate(-6deg);
+	-transform: rotate(-6deg);
+}
+
+.polaroid-bottom {
+	/*
+	position: don't change
+	left, top: Changes the position of the image
+	z-position: don't change
+	*/
+	width: 200px;
+	display: inline-block;
+	position: absolute;
+	left: -4%;
+	top: 55%;
+	z-index: 2;
+
+	/*
+	Rotates the image (negative goes counter-clockwise
+	*/
+	-ms-transform: rotate(3deg);
+	-webkit-transform: rotate(3deg);
+	transform: rotate(3deg);
+}
+
+.pv_inner_pic {
+	position: inherit;
+	width: 192px;
+	left: 52%;
+	top: 4px;
+	background-color: #E6F2FD;
+	min-height: 190px !important;
+	max-height: 230px !important;
+}
+
+.dropfield {
+	height: 0;
+	position: relative;
+	max-width: 100%;
+	overflow: scroll;
+	background-color: #FFE0C2;
+}
+
+.pavlov {
+	background: #FFFFFF;
+	text-align: center;
+}
+
+.pavlov_faces {
+	display: inline-block;
+	width: 1200px;
+	max-width: 90%;
+	text-align: justify;
+	-ms-text-justify: distribute-all-lines;
+    	text-justify: distribute-all-lines;
+	margin: 0 auto;
+	position: relative;
+}
+
+.pavlov_box img {
+	width: 200px;
+	max-width: 100%;"	
+	align: left;
+}
+
+.pavlov_box {
+	max-width: 300px;
+	/*width: 200px;*/
+	min-width: 150px;
+    	vertical-align: top;
+    	display: inline-block;
+    	*display: inline;
+}
+
+.stretch {
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0
+}
+
+
+
+@media screen and (max-width: 1000px) {
+	.polaroid-top,
+	.polaroid-bottom {
+		opacity: 0;
+	}
+}
+
+/*755px for the main page*/
+@media screen and (max-width: 755px) {
+	.pavlov_box {
+		min-width: 225px;
+	}
+}
+
+@media screen and (min-width: 756px) {
+	.pavlov_faces {
+		height: 300px;
+	}
+}
+
+.report {
+	display: inline-block;
+	max-width: 75%;
+}
+
+.report-table {
+	max-width: 40%;
+	width: 300px;
+	display: inline-table;
+	border-collapse: collapse;
+}
+
+.report-table td {
+	border-collapse: collapse;
+	border-bottom: 0px;
+}
+
+.signature-text {
+	margin-top: 80px;
+	margin-bottom: 0;
+}
+
+.report-table tr:nth-child(even),
+.report-table tr.even,
+.report-table tr:nth-child(odd),
+.report-table tr.odd,
+.signature-text {
+	background-color: #7DC1D6;
+}
+
+.report-table td:nth-child(odd) {
+	border-right: #0a0a0a;
+}
+
+.report-table td:nth-child(even) {
+	border-left: #0a0a0a;
+}

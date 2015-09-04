@@ -1,0 +1,43 @@
+#pv_selectable img {
+	display: inline-block;
+}
+
+.hide_things {
+	display: none;
+}
+
+#pv_editable {
+	margin: 0 auto;
+	height: 0px;
+	overflow: scroll;
+	background-color: #FFE0C2;
+	text-align: center;
+}
+
+#pv_editable textarea {
+	width: 83%;
+}
+
+#pv_selectable img {
+	opacity: 80%;
+}
+
+#pv_selectable img:hover {
+	-webkit-transition: opacity 100%;
+	transition: opacity 100%;
+}
+
+.polaroid {
+	margin: 0 30px;
+	display: inline-block;
+	width: 200px;
+}
+
+.polaroid > img {
+	width: 200px;
+}
+
+#pv_report {
+	display: inline-table;
+	border: 1px solid black;
+}
